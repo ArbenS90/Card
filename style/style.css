@@ -1,61 +1,154 @@
-html,body{
-    margin: 0;
-    height: 100%;
-
+* {
+    box-sizing: border-box;
 }
 
-body
-{
-    background-image: url(/img/gon.jpg);
-    background-size: cover;
+html {
+    font-size: 62.5%;
+    background-image: url(/img/gon\ rage.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
 }
 
-.container
-{
-    height: 100vh;
-    width: 100vw;    
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------------------------------ */
+
+main {
     display: flex;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    z-index: -99;
-    margin: 0;
-
+    opacity: 0.8;
+    
 }
 
-.card
-{
-    width: 50%;
-    max-width: 400px;
-    height: 60%;
-    background-color: aliceblue;    
+.card-container {
+    width: 350px;
+    height: 480px;
+    display: inline-block;
+    position: relative;
+    background-color:#f5f5f5 ;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid rgb(11, 53, 3);
+    box-shadow: 5px 10px 50px #024902da;
+}
+
+.img-background {
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background: url("/img/gon.jpg") center/cover no-repeat;
+    z-index: 10;
+}
+
+.card-img-profile {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 104px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.726);
+    z-index: 20;
+    background: url("/img/gonn.webp") center/cover no-repeat;
+}
+
+/* ------------------------------------------------------ */
+
+.card_profile {
+    display: flex;
+    width: 100%;
+    margin: 45px auto 20px;
+    flex-direction: column;
+}
+
+.card_profile h1 {
+    width: 65%;
+    margin: 10px auto 7px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    border-bottom: 1px solid rgb(214, 116, 3);
+    color: #1b5723;
+}
+
+.card_profile p {
+    padding: 0 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ------------------------------------------------------ */
+
+.card_information {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 20px 60px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 20px 85px;
+}
+
+
+/* ------------------------------------------------------ */
+
+.data {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    color: black;
+    border-top: 2px solid rgba(34, 85, 42, 0.876);
+}
+
+span {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.heigh {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.75); /* Establece el color de fondo semi-transparente */
-    border-radius: 10px;
-    border: 2px solid whitesmoke;
-    
+    font-weight: bolder;
 }
 
-.top
-{
-   background-image: url(/img/gonn.webp);
-   background-size: cover;
-   height: 40%;
-   width: 100%;
-   border: 1px solid whitesmoke;
-    
+.age {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
 }
+/* ------------------------------------------------------ */
 
-.gon {
+.made-By {
+    display: flex;
     width: 100%;
-    height: 60%;
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    background-color: #093814;
+    color: white;
+    
 }
